@@ -4,7 +4,7 @@ cat /tmp/id/id_rsa.pub | ssh root@servername 'cat >> .ssh/authorized_keys && ech
 To make passwordless connection
 #!/bin/bash
 #Script taking the remote server IP as an argument
-if [ "$1" != "" ];
+if [ "$1" != "" ]; OR if [ ! -z "$1" ]
 then
 printf "\n ****************Initiating the process************* \n\n"
 printf "\n ****************You need to enter the password for $1************* \n\n"
