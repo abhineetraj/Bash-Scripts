@@ -21,3 +21,7 @@ aws ssm create-activation \
     --registration-limit 1 \
     --region "$region" \
     --expiration-date "$expiration_date"
+    
+    
+#Registering the instance
+sudo /snap/amazon-ssm-agent/current/amazon-ssm-agent  -register -code "abcdefgh" -id "48404278-46324-b8ab-6236aas129" -region "us-west-1"
