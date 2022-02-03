@@ -7,3 +7,9 @@ if [ "$USER" = abhineet ]; then
 else
     echo "Please re-run the script as user abhineet"
 fi
+
+OR
+
+su - abhineet <<EOF
+        <run whatever commands>
+EOF
